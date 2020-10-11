@@ -1,0 +1,21 @@
+.event-container {
+  position: relative;
+  height: 240px;
+  width: 240px;
+  cursor: pointer;
+}
+.event-title {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: white;
+  padding: 10px;
+  height: 25%;
+  border-radius: 0 0 5px 5px;
+}
+
+.event-img {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,32 @@
+.search-container {
+  height: 30px;
+  margin-top: 3vh;
+  margin-bottom: 2%;
+}
+.search-container input,
+.search-container button {
+  height: 100%;
+}
+.search-container input {
+  width: 20vw;
+  padding: 0 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: white;
+  border-radius: 5px 0 0 5px;
+}
+.search-container button {
+  width: 10vw;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+/* event divs */
+.all-events-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}

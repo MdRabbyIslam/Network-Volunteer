@@ -1,0 +1,50 @@
+.event-form {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 10% 1fr 1fr;
+  grid-template-rows: auto; */
+  grid-template-areas:
+    "event-title event-title . event-date event-date"
+    "discription discription . banner banner"
+    ". . . . submit";
+  row-gap: 2em;
+  background-color: white;
+  margin-top: 5%;
+  border-radius: 10px;
+  padding: 8%;
+}
+
+.event-form input {
+  width: 100%;
+  font-size: 14px;
+  padding: 1%;
+  margin-top: 3%;
+}
+.event-form input[type="submit"] {
+  background-color: orange;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.event-form textarea {
+  width: 100%;
+}
+.item-1 {
+  grid-area: event-title;
+}
+.item-2 {
+  grid-area: discription;
+}
+.item-3 {
+  grid-area: event-date;
+}
+.item-4 {
+  grid-area: banner;
+}
+.item-5 {
+  grid-area: submit;
+}
+.item-5 input {
+  cursor: pointer;
+}

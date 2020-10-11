@@ -1,0 +1,47 @@
+.all-event-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.user-event-container {
+  display: flex;
+  min-height: 200px;
+  min-width: 400px;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0;
+
+  border-radius: 10px;
+}
+.user-img-container,
+.event-details {
+  height: 200px;
+  width: 250px;
+  background-color: white;
+}
+.user-img-container {
+  border-radius: 10px 0 0 10px;
+}
+.user-event-img {
+  height: 100%;
+  width: 100%;
+}
+.event-details {
+  position: relative;
+  padding: 2%;
+  border-radius: 0 10px 10px 0;
+}
+.cancel-btn {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: gray;
+  border-radius: 5px;
+  margin: 0 5px 5px 0;
+  color: white;
+  padding: 10px 25px;
+  right: 0;
+  bottom: 0;
+}

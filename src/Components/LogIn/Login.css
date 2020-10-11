@@ -1,0 +1,41 @@
+.login-bg {
+  background-color: rgba(0, 0, 0, 0.06);
+  height: 100vh;
+}
+.logo-container {
+  text-align: center;
+  padding-top: 2%;
+}
+.logo-container img {
+  height: 100px;
+  width: 240px;
+}
+.login {
+  width: 40vw;
+  height: 40vh;
+  margin: 0 auto;
+  padding: 3%;
+  text-align: center;
+  margin-top: 5%;
+  background-color: white;
+  border-radius: 2%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+.login h2 {
+  font-size: 20px;
+}
+.login-btn {
+  cursor: pointer;
+  width: 80%;
+  font-size: 18px;
+  padding: 10px 30px;
+  margin: 30px 0;
+  border-radius: 10px;
+  border: none;
+  color: gray;
+  background-color: white;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+.login .link {
+  color: royalblue;
+}

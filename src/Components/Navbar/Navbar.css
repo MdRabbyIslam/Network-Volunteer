@@ -1,0 +1,36 @@
+/* navigation-bar */
+.home {
+  text-align: center;
+}
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 2%;
+}
+.nav-logo {
+  height: 50px;
+}
+.nav-links {
+  width: 65vw;
+  display: flex;
+  justify-content: space-around;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.reg-link {
+  background: blue;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.admin-link {
+  background: gray;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
