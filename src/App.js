@@ -1,15 +1,15 @@
 import React, { createContext, useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import Admin from "./Components/Admin/Admin";
-// import AddEvent from "./Components/Admin/Admin";
 import Event from "./Components/Event/Event";
 import Home from "./Components/Home/Home";
 import LogIn from "./Components/LogIn/LogIn";
-import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import Register from "./Components/Register/Register";
 import UserVolunteerList from "./Components/UserVolenteerList/UserVolunteerList";
 
+//context api
 export const UserContext = createContext();
 
 function App() {
