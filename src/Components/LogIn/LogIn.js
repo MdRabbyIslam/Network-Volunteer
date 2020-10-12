@@ -25,14 +25,14 @@ const LogIn = () => {
       .then((result) => {
         const user = result.user;
         const { displayName, email, emailVerified } = user;
-        // console.log(displayName, email, emailVerified);
+
         const newUser = { ...userInfo };
         newUser.name = displayName;
         newUser.email = email;
         newUser.isLogged = emailVerified;
         setUserInfo(newUser);
         storeAuthToken();
-        // console.log(user);
+
         history.replace(from);
       })
       .catch(function (error) {
