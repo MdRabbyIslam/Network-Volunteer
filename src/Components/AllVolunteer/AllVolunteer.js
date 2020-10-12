@@ -8,7 +8,7 @@ const AllVolunteer = (props) => {
   const [allVolunteer, setAllVolunteer] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allVolunteerList")
+    fetch("https://frozen-anchorage-84492.herokuapp.com/allVolunteerList")
       .then((res) => res.json())
       .then((data) => {
         setAllVolunteer(data);
@@ -17,7 +17,7 @@ const AllVolunteer = (props) => {
 
   const handleDeleteVolunteer = (e, id) => {
     const target = e.target;
-    fetch(`http://localhost:5000/delete/${id}`, {
+    fetch(`https://frozen-anchorage-84492.herokuapp.com/delete/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

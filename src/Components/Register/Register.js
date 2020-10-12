@@ -12,7 +12,7 @@ const Register = () => {
     banner: userInfo.banner,
     discription: "I love you keya rani",
     title: userInfo.title,
-    date: new Date().toLocaleString(),
+    date: new Date().toLocaleDateString(),
   });
 
   const history = useHistory();
@@ -21,18 +21,16 @@ const Register = () => {
     e.preventDefault();
     const name = e.target.name;
     const value = e.target.value;
-    console.log(name, value);
 
     const registerInfo = { ...result };
     registerInfo[name] = value;
     setReslt(registerInfo);
   };
-  console.log(result.date);
   const handleOnSubmit = (e) => {
     const { name, email, discription, title, date, banner } = result;
     const finalResult = { name, email, discription, title, date, banner };
     e.preventDefault();
-    fetch("http://localhost:5000/addVolunteer", {
+    fetch("https://frozen-anchorage-84492.herokuapp.com/addVolunteer", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

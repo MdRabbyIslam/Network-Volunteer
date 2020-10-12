@@ -3,6 +3,7 @@ import "./Admin.css";
 import logo from "../Images/logos/Group 1329.png";
 import AdEvent from "../Adevent/AdEvent";
 import AllVolunteer from "../AllVolunteer/AllVolunteer";
+import { Link } from "react-router-dom";
 
 function Admin() {
   const [selectedBtn, setSelectedBtn] = useState({
@@ -18,8 +19,10 @@ function Admin() {
   return (
     <div className="admin">
       <div className="top-bar">
-        <img className="logo" src={logo} alt="" />
-        <h2>Add Event </h2>
+        <Link to="/">
+          <img className="logo-img" src={logo} alt="" />
+        </Link>
+        <h3>Add Event </h3>
       </div>
       <div className="main">
         <div className="sidebar">

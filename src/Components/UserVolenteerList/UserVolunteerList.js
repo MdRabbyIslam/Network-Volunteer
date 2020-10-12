@@ -11,13 +11,16 @@ const UserVolenteerList = () => {
 
   useEffect(() => {
     const fetching = () => {
-      fetch(`http://localhost:5000/userVolunteerList?email=${email}`, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          authorization: `Bearer ${sessionStorage.getItem("token")}`,
-        },
-      })
+      fetch(
+        `https://frozen-anchorage-84492.herokuapp.com/userVolunteerList?email=${email}`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            authorization: `Bearer ${sessionStorage.getItem("token")}`,
+          },
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           setAllEvent(data);
@@ -29,9 +32,7 @@ const UserVolenteerList = () => {
 
   const handleCancelEvent = (e, id) => {
     const target = e.target;
-    console.log(target);
-    console.log(id);
-    fetch(`http://localhost:5000/delete/${id}`, {
+    fetch(`https://frozen-anchorage-84492.herokuapp.com/delete/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

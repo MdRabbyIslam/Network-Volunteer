@@ -6,7 +6,7 @@ import Navbar from "../Navbar/Navbar";
 const Home = () => {
   const [allEvent, setAllEvent] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/allevents")
+    fetch("https://frozen-anchorage-84492.herokuapp.com/allevents")
       .then((res) => res.json())
       .then((data) => {
         setAllEvent(data);
