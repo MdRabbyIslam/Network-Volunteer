@@ -2,7 +2,7 @@
 
 	Technology: React.js, Bootstrap, Express, MongoDB, Node.js, firebase, React-router, etc.
   
-  	Features:
+Features:
 *	It is a volunteering site where people can play a volunteer role in developing  society
 *	People can add volunteer event and see the selected volunteer
 *	Here has also an admin panel where the admin can see all-volunteer and remove bad volunteer
