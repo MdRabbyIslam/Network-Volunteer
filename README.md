@@ -10,3 +10,5 @@ Features:
 live site: https://volunteer-network-12fba.web.app/
 
 server-side code: https://github.com/Rabby-sopno/network-volunteer-server
+
+linkedIn: https://www.linkedin.com/in/rabby-islam-4579a4164/
