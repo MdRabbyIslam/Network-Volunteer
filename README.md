@@ -7,6 +7,6 @@ Features:
 *	People can add volunteer event and see the selected volunteer
 *	Here has also an admin panel where the admin can see all-volunteer and remove bad volunteer
 
-live site: [https://volunteer-network-12fba.web.app/]
+live site: https://volunteer-network-12fba.web.app/
 
-server-side code: [https://github.com/Rabby-sopno/network-volunteer-server]
+server-side code: https://github.com/Rabby-sopno/network-volunteer-server
